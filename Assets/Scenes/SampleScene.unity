@@ -873,10 +873,16 @@ Tilemap:
   - serializedVersion: 2
     m_RefCount: 36
     m_Data: {fileID: 11400000, guid: 9699920777441554aabe3267a272d5d0, type: 2}
+  - serializedVersion: 2
+    m_RefCount: 0
+    m_Data: {fileID: 11400000, guid: ddcafc1fa5920b94b83abde47aa9d797, type: 2}
   m_TileSpriteArray:
   - serializedVersion: 2
     m_RefCount: 36
     m_Data: {fileID: 1785213284, guid: d92df599628bc0d49b5a2e3aa178f9d0, type: 3}
+  - serializedVersion: 2
+    m_RefCount: 0
+    m_Data: {fileID: 6035934307484185423, guid: e431ec36ec27ce245a6207b58f717726, type: 3}
   m_TileMatrixArray:
   - serializedVersion: 2
     m_RefCount: 36
