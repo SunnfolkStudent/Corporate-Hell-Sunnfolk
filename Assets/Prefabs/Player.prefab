@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 5396500099618284375}
   - component: {fileID: 8941426287672469252}
   - component: {fileID: 7895986250306247319}
+  - component: {fileID: 5218814862088294395}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -239,7 +240,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: dfd473e65fee0bf4986a5f4ab6a8e2b2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -316,20 +317,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  groundBoxSize: {x: 0.58, y: 0.1}
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8033973307865307876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0552689ce398e78a9a1a25d923f98a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Aim
-  crosshair: {fileID: 5164309084683066745}
-  aimRadius: 1
+  groundBoxSize: {x: 0.55, y: 0.001}
+  ammoSize: 2
 --- !u!114 &8941426287672469252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,3 +344,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b63d5590278824abea4c1cac8a9378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraChange
+  cameraPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _cineCam: {fileID: 0}
+--- !u!114 &5218814862088294395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8033973307865307876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0552689ce398e78a9a1a25d923f98a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Aim
+  crosshair: {fileID: 5164309084683066745}
+  aimRadius: 1
