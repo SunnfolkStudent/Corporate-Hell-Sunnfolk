@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &322329428 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7070837042752175817, guid: 486500248edda0514a22f9be3195f196, type: 3}
-  m_PrefabInstance: {fileID: 4415714099385782494}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &506134434
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,22 +431,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: force
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: groundCheck
-      value: 
-      objectReference: {fileID: 322329428}
-    - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: groundBoxSize.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: whatIsGround.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
     - target: {fileID: 6748695592913404329, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -491,14 +470,6 @@ PrefabInstance:
     - target: {fileID: 6748695592913404329, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7070837042752175817, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7070837042752175817, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8033973307865307876, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_Name

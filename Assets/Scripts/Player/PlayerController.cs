@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     public bool playerIsGrounded;
     public Transform groundCheck;
     public LayerMask whatIsGround;
-    public Vector2 groundBoxSize = new Vector2(1f, 0.2f);
+    public Vector2 groundBoxSize = new Vector2(0.6f, 0.2f);
     
 
     private void Start()

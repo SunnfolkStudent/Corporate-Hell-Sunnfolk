@@ -310,13 +310,12 @@ MonoBehaviour:
   ammo: 0
   force: 7
   maxAmmo: 2
-  maxAmmo: 2
   playerIsGrounded: 0
   groundCheck: {fileID: 7070837042752175817}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  groundBoxSize: {x: 1, y: 0.2}
+  groundBoxSize: {x: 0.6, y: 0.2}
 --- !u!114 &5396500099618284375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,7 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Aim
   crosshair: {fileID: 5164309084683066745}
-  aimRadius: 2
+  aimRadius: 1.2
 --- !u!114 &8941426287672469252
 MonoBehaviour:
   m_ObjectHideFlags: 0
