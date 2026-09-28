@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 2408201123220267812}
   - component: {fileID: 5396500099618284375}
   - component: {fileID: 8941426287672469252}
+  - component: {fileID: 7895986250306247319}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -315,7 +316,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  groundBoxSize: {x: 0.6, y: 0.2}
+  groundBoxSize: {x: 0.58, y: 0.2}
 --- !u!114 &5396500099618284375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,3 +344,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputManager
   Gun: 0
+--- !u!114 &7895986250306247319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8033973307865307876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b63d5590278824abea4c1cac8a9378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraChange
