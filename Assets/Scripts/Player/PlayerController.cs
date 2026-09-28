@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
         _input = GetComponent<InputManager>();
         _aim = GetComponent<Aim>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        ammo = 1;
+       // ammo = 1;
     }
     
 
