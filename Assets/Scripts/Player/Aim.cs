@@ -5,7 +5,9 @@ using UnityEngine.InputSystem;
 public class Aim : MonoBehaviour
 {
     [SerializeField] private Transform crosshair;
-    [SerializeField] private float aimRadius = 2f;
+    [SerializeField] private float aimRadius = 1f;
+    
+    public Vector2 Direction { get; private set; }
 
     private Camera mainCamera;
 
@@ -28,6 +30,7 @@ public class Aim : MonoBehaviour
             return;
         
         direction.Normalize();
+        Direction = direction;
         
         crosshair.position = transform.position + (Vector3)(direction * aimRadius);
     }

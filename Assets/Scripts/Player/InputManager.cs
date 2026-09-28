@@ -10,7 +10,7 @@ public class InputManager : MonoBehaviour
 
     private void Update()
     {
-        Gun = _inputSystem.Player.GUN.IsPressed();
+        Gun = _inputSystem.Player.GUN.WasPressedThisFrame();
     }
 
     private void Awake() { _inputSystem = new InputSystem_Actions(); }
