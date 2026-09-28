@@ -294,7 +294,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.95, y: 0.95}
   m_EdgeRadius: 0
 --- !u!114 &2408201123220267812
 MonoBehaviour:
@@ -360,3 +360,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b63d5590278824abea4c1cac8a9378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraChange
+  cameraPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _cineCam: {fileID: 0}

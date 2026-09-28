@@ -1,10 +1,18 @@
 using System;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class CameraChange : MonoBehaviour
 {
-    private void OnBecameInvisible()
+    public Transform[] cameraPoints;
+    public CinemachineCamera _cineCam;
+
+    private void OnBecomeInvisible()
     {
-        throw new NotImplementedException();
+        void findClosest()
+        {
+            
+        }
     }
-}
+ 
+}   
