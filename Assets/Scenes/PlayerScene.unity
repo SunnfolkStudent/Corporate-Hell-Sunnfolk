@@ -445,6 +445,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 322329428}
     - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
+      propertyPath: groundBoxSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: whatIsGround.m_Bits
       value: 64
       objectReference: {fileID: 0}

@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     
     public int ammo;
     public float force = 7f;
-    
     public int maxAmmo = 2;
     
     private InputManager _input;
@@ -19,7 +18,7 @@ public class PlayerController : MonoBehaviour
     public bool playerIsGrounded;
     public Transform groundCheck;
     public LayerMask whatIsGround;
-    public Vector2 groundBoxSize = new Vector2(0.2f, 0.2f);
+    public Vector2 groundBoxSize = new Vector2(1f, 0.2f);
     
 
     private void Start()
@@ -27,7 +26,8 @@ public class PlayerController : MonoBehaviour
         _input = GetComponent<InputManager>();
         _aim = GetComponent<Aim>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
-       // ammo = 1;
+        
+        ammo = 1;
     }
     
 
@@ -48,6 +48,13 @@ public class PlayerController : MonoBehaviour
 
         _wasGrounded = playerIsGrounded;
     }
+    
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(groundCheck.position, groundBoxSize);
+    }
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.transform.CompareTag("Death"))
