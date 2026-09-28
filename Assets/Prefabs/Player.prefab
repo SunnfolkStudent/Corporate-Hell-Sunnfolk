@@ -316,7 +316,11 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+<<<<<<< HEAD
   groundBoxSize: {x: 0.58, y: 0.2}
+=======
+  groundBoxSize: {x: 0.58, y: 0.1}
+>>>>>>> 57e3cb6 (Small fixes on character, for bullet mechanic and sliding)
 --- !u!114 &5396500099618284375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,7 +334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Aim
   crosshair: {fileID: 5164309084683066745}
-  aimRadius: 1.2
+  aimRadius: 1
 --- !u!114 &8941426287672469252
 MonoBehaviour:
   m_ObjectHideFlags: 0

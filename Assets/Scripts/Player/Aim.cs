@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class Aim : MonoBehaviour
 {
     [SerializeField] private Transform crosshair;
-    [SerializeField] private float aimRadius = 1.2f;
+    [SerializeField] private float aimRadius = 1f;
     
     public Vector2 Direction { get; private set; }
 

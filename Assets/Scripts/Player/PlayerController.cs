@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     
     public int ammo;
-    public float force = 7f;
+    public float force = 5f;
     public int maxAmmo = 2;
     
     private InputManager _input;
@@ -18,7 +18,10 @@ public class PlayerController : MonoBehaviour
     public bool playerIsGrounded;
     public Transform groundCheck;
     public LayerMask whatIsGround;
-    public Vector2 groundBoxSize = new Vector2(0.6f, 0.2f);
+    public Vector2 groundBoxSize = new Vector2(0.55f, 0.1f);
+    public int ammoSize = 2;
+
+    private bool gunFired;
     
 
     private void Start()
@@ -27,7 +30,7 @@ public class PlayerController : MonoBehaviour
         _aim = GetComponent<Aim>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         
-        ammo = 1;
+        ammo = ammoSize;
     }
     
 
@@ -37,13 +40,19 @@ public class PlayerController : MonoBehaviour
         
         if (_input.Gun && ammo > 0)
         {
-            ammo--;
+            gunFired = true;
             _rigidbody2D.linearVelocity = -_aim.Direction * force;
         }
 
-        if (playerIsGrounded && !_wasGrounded && ammo <= 0 && !_input.Gun)
+        if (gunFired && !playerIsGrounded)
         {
-            ammo = 1;
+            ammo--;
+            gunFired = false;
+        }
+
+        if (playerIsGrounded && !_wasGrounded && ammo < ammoSize && !_input.Gun)
+        {
+            ammo = ammoSize;
         }
 
         _wasGrounded = playerIsGrounded;
