@@ -316,12 +316,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-<<<<<<< HEAD
-  groundBoxSize: {x: 0.58, y: 0.2}
-=======
   groundBoxSize: {x: 0.58, y: 0.1}
->>>>>>> 57e3cb6 (Small fixes on character, for bullet mechanic and sliding)
---- !u!114 &5396500099618284375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
