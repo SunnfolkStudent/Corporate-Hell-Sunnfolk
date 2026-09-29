@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,8 +8,9 @@ public class PlayerController : MonoBehaviour
 {
     
     public int ammo;
-    public float force = 5f;
-    public int maxAmmo = 2;
+    public float force = 6f;
+    public int ammoSize = 2;
+    public float shootDistance = 4f;
     
     private InputManager _input;
     private Aim _aim;
@@ -18,9 +20,9 @@ public class PlayerController : MonoBehaviour
     public bool playerIsGrounded;
     public Transform groundCheck;
     public LayerMask whatIsGround;
+    public LayerMask whatIsEnemy;
     public Vector2 groundBoxSize = new Vector2(0.55f, 0.1f);
-    public int ammoSize = 2;
-
+    
     private bool gunFired;
     
 
@@ -36,17 +38,28 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        
+        var hitInfo = Physics2D.Raycast(transform.position, _aim.Direction, shootDistance, whatIsEnemy);
+        
         playerIsGrounded = Physics2D.OverlapBox(groundCheck.position, groundBoxSize, 0f, whatIsGround);
         
         if (_input.Gun && ammo > 0)
         {
             gunFired = true;
+            if (hitInfo.collider != null)
+            {
+                Destroy(hitInfo.collider.gameObject);
+                ammo =  ammoSize;
+            }
             _rigidbody2D.linearVelocity = -_aim.Direction * force;
         }
 
         if (gunFired && !playerIsGrounded)
         {
-            ammo--;
+            if (hitInfo.collider == null)
+            {
+                ammo--;
+            }
             gunFired = false;
         }
 

@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 2790057350879039319}
   - component: {fileID: 2494769582972367807}
   - component: {fileID: 2408201123220267812}
-  - component: {fileID: 5396500099618284375}
   - component: {fileID: 8941426287672469252}
   - component: {fileID: 7895986250306247319}
   - component: {fileID: 5218814862088294395}
@@ -310,15 +309,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   ammo: 0
-  force: 7
-  maxAmmo: 2
+  force: 6
+  ammoSize: 2
+  shootDistance: 4
   playerIsGrounded: 0
   groundCheck: {fileID: 7070837042752175817}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 128
   groundBoxSize: {x: 0.55, y: 0.001}
-  ammoSize: 2
 --- !u!114 &8941426287672469252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,12 +346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b63d5590278824abea4c1cac8a9378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraChange
-  cameraPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  _cineCam: {fileID: 0}
 --- !u!114 &5218814862088294395
 MonoBehaviour:
   m_ObjectHideFlags: 0
