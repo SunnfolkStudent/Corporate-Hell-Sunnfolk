@@ -20,7 +20,7 @@ public class EnemyPatrol : MonoBehaviour
         if (DetectedWallOrFall())
         {
             moveSpeed *= -1;
-            transform.localScale  = new Vector2(transform.localScale.x * -1f, 1f);
+            transform.localScale  = new Vector2(transform.localScale.x * -1f, 0.6f);
         }
     }
 
