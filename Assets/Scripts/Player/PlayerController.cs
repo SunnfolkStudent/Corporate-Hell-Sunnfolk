@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,7 +20,9 @@ public class PlayerController : MonoBehaviour
 
     public bool playerIsGrounded;
     public Transform groundCheck;
-    public Transform theGun;
+    public RawImage ammoImage1;
+    public RawImage ammoImage2;
+    public RawImage ammoImage3;
     public LayerMask whatIsGround;
     public LayerMask whatIsEnemy;
     public Vector2 groundBoxSize = new Vector2(0.55f, 0.1f);
@@ -72,11 +75,27 @@ public class PlayerController : MonoBehaviour
         _wasGrounded = playerIsGrounded;
     }
 
-    //private void FixedUpdate()
-    //{
-    //    theGun.position = new Vector3(_aim.Direction.x * _rigidbody2D.position.x, _aim.Direction.y * _rigidbody2D.position.y + 0.1f, 0.1f);
-    //    theGun.rotation = new Quaternion(_aim.Direction.x, _aim.Direction.y, 0.1f, 0.1f);
-    //}
+    private void FixedUpdate()
+    {
+        if (ammo == 0)
+        {
+            ammoImage1.enabled = true;
+            ammoImage2.enabled = false;
+            ammoImage3.enabled = false;
+        }
+        else if (ammo == 1)
+        {
+            ammoImage1.enabled = false;
+            ammoImage2.enabled = true;
+            ammoImage3.enabled = false;
+        }
+        else if (ammo == 2)
+        {
+            ammoImage1.enabled = false;
+            ammoImage2.enabled = false;
+            ammoImage3.enabled = true;
+        }
+    }
 
     private void OnDrawGizmos()
     {
