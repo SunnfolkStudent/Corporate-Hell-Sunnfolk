@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     public bool playerIsGrounded;
     public Transform groundCheck;
+    public Transform theGun;
     public LayerMask whatIsGround;
     public LayerMask whatIsEnemy;
     public Vector2 groundBoxSize = new Vector2(0.55f, 0.1f);
@@ -70,7 +71,13 @@ public class PlayerController : MonoBehaviour
 
         _wasGrounded = playerIsGrounded;
     }
-    
+
+    //private void FixedUpdate()
+    //{
+    //    theGun.position = new Vector3(_aim.Direction.x * _rigidbody2D.position.x, _aim.Direction.y * _rigidbody2D.position.y + 0.1f, 0.1f);
+    //    theGun.rotation = new Quaternion(_aim.Direction.x, _aim.Direction.y, 0.1f, 0.1f);
+    //}
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
