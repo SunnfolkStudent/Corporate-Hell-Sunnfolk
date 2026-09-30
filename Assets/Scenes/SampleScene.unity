@@ -15746,7 +15746,7 @@ Grid:
   m_GameObject: {fileID: 1503730073}
   m_Enabled: 1
   m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellGap: {x: -0.001, y: -0.001, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
 --- !u!4 &1503730075
@@ -18141,10 +18141,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: force
-      value: 6.3
-      objectReference: {fileID: 0}
     - target: {fileID: 6748695592913404329, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -18185,26 +18181,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7895986250306247319, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: _cineCam
-      value: 
-      objectReference: {fileID: 224953371}
-    - target: {fileID: 7895986250306247319, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: 'cameraPoints.Array.data[0]'
-      value: 
-      objectReference: {fileID: 779715871}
-    - target: {fileID: 7895986250306247319, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: 'cameraPoints.Array.data[1]'
-      value: 
-      objectReference: {fileID: 1954369318}
-    - target: {fileID: 7895986250306247319, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: 'cameraPoints.Array.data[2]'
-      value: 
-      objectReference: {fileID: 845950307}
-    - target: {fileID: 7895986250306247319, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: 'cameraPoints.Array.data[3]'
-      value: 
-      objectReference: {fileID: 821504586}
     - target: {fileID: 8033973307865307876, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_Name
       value: Player
