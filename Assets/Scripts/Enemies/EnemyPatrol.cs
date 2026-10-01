@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
@@ -9,10 +10,13 @@ public class EnemyPatrol : MonoBehaviour
     public Transform fallCheck;
     
     private Rigidbody2D _rigidbody2D;
+    private Animator _animator;
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        _animator.Play("Floater Walk");
     }
 
     private void Update()

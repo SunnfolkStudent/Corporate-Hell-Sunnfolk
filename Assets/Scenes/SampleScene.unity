@@ -22758,10 +22758,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1789855148}
     m_Modifications:
-    - target: {fileID: 2032082844871542430, guid: 038fa8c05eb2258419e0cc13ec2ab8bc, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5750497262983117583, guid: 038fa8c05eb2258419e0cc13ec2ab8bc, type: 3}
       propertyPath: m_Name
       value: FloatingEnemy (2)
@@ -23087,18 +23083,6 @@ PrefabInstance:
       value: PatrolEnemy (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4098306744831913149, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4098306744831913149, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4098306744831913149, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4098306744831913149, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14
       objectReference: {fileID: 0}
@@ -23137,10 +23121,6 @@ PrefabInstance:
     - target: {fileID: 4098306744831913149, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6370152719788751431, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28218,10 +28198,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 173730908}
     m_Modifications:
-    - target: {fileID: 2475927625514842112, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
     - target: {fileID: 2541788441022979760, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
       propertyPath: m_Name
       value: PatrolEnemy (1)
@@ -28265,10 +28241,6 @@ PrefabInstance:
     - target: {fileID: 4098306744831913149, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6370152719788751431, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29614,6 +29586,10 @@ PrefabInstance:
     - target: {fileID: 3450731234159196794, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
       propertyPath: m_Name
       value: ChaserBoss2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450731234159196794, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
       propertyPath: 'waypoints.Array.data[0]'
@@ -33867,11 +33843,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748695592913404329, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.4
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 6748695592913404329, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 6748695592913404329, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_LocalPosition.z

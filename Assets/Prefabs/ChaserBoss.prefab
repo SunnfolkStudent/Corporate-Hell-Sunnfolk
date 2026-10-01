@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 4843865772875110646}
   - component: {fileID: 5252493099713534859}
   - component: {fileID: 1546826500303562962}
-  m_Layer: 7
+  - component: {fileID: 6033096369991121212}
+  m_Layer: 9
   m_Name: ChaserBoss
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -117,6 +118,7 @@ MonoBehaviour:
   - {fileID: 0}
   moveSpeed: 1.5
   shouldMove: 0
+  moveNOw: 0
 --- !u!58 &1546826500303562962
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -153,3 +155,25 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!95 &6033096369991121212
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450731234159196794}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a484113bf8e98242bac7ba06b225867, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
