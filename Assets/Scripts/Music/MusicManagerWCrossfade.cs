@@ -12,8 +12,8 @@ public class MusicManagerWCrossfade : MonoBehaviour
     public PolygonCollider2D chaseCheck1;
     public PolygonCollider2D chaseCheck2;
 
-    public void Update()
-    {
-        if(chaseCheck1 )
-    }
+    //public void Update()
+   //{
+        //if(chaseCheck1 )
+    //}
 }

@@ -7,12 +7,12 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    
+
     public int ammo;
     public float force = 6f;
     public int ammoSize = 2;
     public float shootDistance = 4f;
-    
+
     private InputManager _input;
     private Aim _aim;
     private Rigidbody2D _rigidbody2D;
@@ -27,36 +27,40 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsEnemy;
     public Vector2 groundBoxSize = new Vector2(0.55f, 0.1f);
 
-    
-    
+    private Animator _animator;
+
     private bool gunFired;
-    
+
 
     private void Start()
     {
         _input = GetComponent<InputManager>();
         _aim = GetComponent<Aim>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
         
+        _animator.Play("Jim_Idle");
+
         ammo = ammoSize;
     }
-    
+
 
     private void Update()
     {
-        
+       
         var hitInfo = Physics2D.Raycast(transform.position, _aim.Direction, shootDistance, whatIsEnemy);
-        
+
         playerIsGrounded = Physics2D.OverlapBox(groundCheck.position, groundBoxSize, 0f, whatIsGround);
-        
+
         if (_input.Gun && ammo > 0)
         {
             gunFired = true;
             if (hitInfo.collider != null)
             {
                 Destroy(hitInfo.collider.gameObject);
-                ammo =  ammoSize;
+                ammo = ammoSize;
             }
+
             _rigidbody2D.linearVelocity = -_aim.Direction * force;
         }
 
@@ -66,6 +70,7 @@ public class PlayerController : MonoBehaviour
             {
                 ammo--;
             }
+
             gunFired = false;
         }
 
@@ -98,14 +103,18 @@ public class PlayerController : MonoBehaviour
             ammoImage3.enabled = true;
         }
     }
-    
-    
+
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.transform.CompareTag("Death"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            _animator.Play("Jim_Death");
         }
     }
-}
 
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+}
