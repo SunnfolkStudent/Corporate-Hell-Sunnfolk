@@ -98,16 +98,7 @@ public class PlayerController : MonoBehaviour
             ammoImage3.enabled = true;
         }
     }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(groundCheck.position, groundBoxSize);
-        //Gizmos.color  = Color.red;
-        //Vector3 Origin = transform.position;
-        //Vector3 Direction = _aim.Direction * shootDistance;
-        //Gizmos.DrawRay(Origin, Direction);
-    }
+    
     
     private void OnCollisionEnter2D(Collision2D other)
     {
