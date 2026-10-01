@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsEnemy;
     public Vector2 groundBoxSize = new Vector2(0.55f, 0.1f);
 
-    public FollowThePath followThePath;
+    
     
     private bool gunFired;
     
@@ -96,14 +96,6 @@ public class PlayerController : MonoBehaviour
             ammoImage1.enabled = false;
             ammoImage2.enabled = false;
             ammoImage3.enabled = true;
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Alarm")
-        {
-            followThePath.shouldMove = true;
         }
     }
 
