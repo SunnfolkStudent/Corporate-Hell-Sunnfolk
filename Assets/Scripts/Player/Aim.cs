@@ -18,6 +18,8 @@ public class Aim : MonoBehaviour
 
     private void Update()
     {
+        if (PauseManager.paused) return;
+        
         if (Mouse.current == null)
             return;
 

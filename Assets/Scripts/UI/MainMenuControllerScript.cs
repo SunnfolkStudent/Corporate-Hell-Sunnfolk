@@ -6,7 +6,7 @@ public class MainMenuController : MonoBehaviour
 
     public void GameScene()
     {
-        SceneManager.LoadScene("UIandHazardsScene");
+        SceneManager.LoadScene("SampleScene");
     }
     
     public void QuitGame()

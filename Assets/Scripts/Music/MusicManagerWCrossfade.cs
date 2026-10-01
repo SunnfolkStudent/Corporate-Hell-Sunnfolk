@@ -14,6 +14,6 @@ public class MusicManagerWCrossfade : MonoBehaviour
 
     public void Update()
     {
-        if(chaseCheck1 )
+        if (chaseCheck1) ;
     }
 }

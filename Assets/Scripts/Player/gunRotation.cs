@@ -6,6 +6,8 @@ public class gunRotation : MonoBehaviour
 
     private void Update()
     {
+        if (PauseManager.paused) return;
+        
         transform.rotation = Quaternion.LookRotation(Vector3.forward, -aim.Direction);
     }
 }

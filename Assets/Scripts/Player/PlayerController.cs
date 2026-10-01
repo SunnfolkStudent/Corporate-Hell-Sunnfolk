@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (PauseManager.paused) return;
         
         var hitInfo = Physics2D.Raycast(transform.position, _aim.Direction, shootDistance, whatIsEnemy);
         
