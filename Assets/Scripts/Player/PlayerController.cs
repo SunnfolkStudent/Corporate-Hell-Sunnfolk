@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
     public LayerMask whatIsEnemy;
     public Vector2 groundBoxSize = new Vector2(0.55f, 0.1f);
+
+    public FollowThePath followThePath;
     
     private bool gunFired;
     
@@ -97,14 +99,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Alarm")
+        {
+            followThePath.shouldMove = true;
+        }
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(groundCheck.position, groundBoxSize);
-        Gizmos.color  = Color.red;
-        Vector3 Origin = transform.position;
-        Vector3 Direction = _aim.Direction * shootDistance;
-        Gizmos.DrawRay(Origin, Direction);
+        //Gizmos.color  = Color.red;
+        //Vector3 Origin = transform.position;
+        //Vector3 Direction = _aim.Direction * shootDistance;
+        //Gizmos.DrawRay(Origin, Direction);
     }
     
     private void OnCollisionEnter2D(Collision2D other)
@@ -115,3 +125,4 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
+

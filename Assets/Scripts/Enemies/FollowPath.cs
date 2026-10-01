@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FollowThePath : MonoBehaviour {
@@ -9,19 +10,22 @@ public class FollowThePath : MonoBehaviour {
     private float moveSpeed = 2f;
 
     private int waypointIndex = 0;
-
+    
+    public bool shouldMove;
 
     private void Start () {
 
         transform.position = waypoints[waypointIndex].transform.position;
     }
-	
-    private void Update () {
-
-        Move();
+ 
+    private void Update()
+    {
+        if (shouldMove)
+        {
+            Move();
+        }
     }
-
-    private void Move()
+    public void Move()
     {
         if (waypointIndex <= waypoints.Length - 1)
         {
