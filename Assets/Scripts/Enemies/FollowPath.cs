@@ -1,3 +1,4 @@
+using NUnit.Framework.Constraints;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -16,9 +17,14 @@ public class FollowThePath : MonoBehaviour {
     public bool moveNOw;
     
     private Animator _animator;
+    private AudioSource _audioSource;
+    public AudioClip chasingStart;
+    public AudioClip chasingPro;
+    public AudioClip chasingEnd;
 
     private void Start () {
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
         _animator.Play("Chaser OFF");
         transform.position = waypoints[waypointIndex].transform.position;
     }
@@ -32,6 +38,7 @@ public class FollowThePath : MonoBehaviour {
     {
         if (shouldMove)
         {
+            _audioSource.PlayOneShot(chasingStart);
             _animator.Play("Chaser Turning On");
         }
 
