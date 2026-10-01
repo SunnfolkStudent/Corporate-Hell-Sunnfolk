@@ -116,7 +116,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  moveSpeed: 1.5
+  moveSpeed: 1
   shouldMove: 0
   moveNOw: 0
 --- !u!58 &1546826500303562962
