@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,7 +27,12 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsEnemy;
     public Vector2 groundBoxSize = new Vector2(0.55f, 0.1f);
 
+    public AudioClip gunShot;
+    public AudioClip[] dyingSounds;
+    
     private Animator _animator;
+    private AudioSource _audioSource;
+    
 
     private bool gunFired;
 
@@ -37,6 +43,7 @@ public class PlayerController : MonoBehaviour
         _aim = GetComponent<Aim>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
         
         _animator.Play("Jim_Idle");
 
@@ -54,6 +61,7 @@ public class PlayerController : MonoBehaviour
         if (_input.Gun && ammo > 0)
         {
             gunFired = true;
+            _audioSource.PlayOneShot(gunShot);
             if (hitInfo.collider != null)
             {
                 Destroy(hitInfo.collider.gameObject);
@@ -108,6 +116,10 @@ public class PlayerController : MonoBehaviour
     {
         if (other.transform.CompareTag("Death"))
         {
+            
+            int randomSound = Random.Range(0, dyingSounds.Length);
+            _audioSource.PlayOneShot(dyingSounds[randomSound]);
+            
             _animator.Play("Jim_Death");
         }
     }

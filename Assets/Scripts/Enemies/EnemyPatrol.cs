@@ -16,7 +16,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        _animator.Play("Floater Walk");
+        _animator.Play("Patrol 1 Walk Animations");
     }
 
     private void Update()
