@@ -27056,7 +27056,7 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: -2
-      type: {class: '', ns: '', asm: ''}
+      type: {class: , ns: , asm: }
     - rid: 1446205863839399942
       type: {class: Light2DProviderSources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data:
@@ -27308,6 +27308,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 886827729}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &680746004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5750497262983117583, guid: 038fa8c05eb2258419e0cc13ec2ab8bc, type: 3}
+  m_PrefabInstance: {fileID: 1214523010648337042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &727265530
 GameObject:
   m_ObjectHideFlags: 0
@@ -29590,27 +29595,27 @@ PrefabInstance:
       value: ChaserBoss2
       objectReference: {fileID: 0}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[0]
+      propertyPath: 'waypoints.Array.data[0]'
       value: 
       objectReference: {fileID: 1650521828}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[1]
+      propertyPath: 'waypoints.Array.data[1]'
       value: 
       objectReference: {fileID: 528680881}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[2]
+      propertyPath: 'waypoints.Array.data[2]'
       value: 
       objectReference: {fileID: 651965037}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[3]
+      propertyPath: 'waypoints.Array.data[3]'
       value: 
       objectReference: {fileID: 13152091}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[4]
+      propertyPath: 'waypoints.Array.data[4]'
       value: 
       objectReference: {fileID: 490472544}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[5]
+      propertyPath: 'waypoints.Array.data[5]'
       value: 
       objectReference: {fileID: 2069387217}
     - target: {fileID: 6379186812178520122, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
@@ -31571,35 +31576,35 @@ PrefabInstance:
       value: ChaserBoss
       objectReference: {fileID: 0}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[0]
+      propertyPath: 'waypoints.Array.data[0]'
       value: 
       objectReference: {fileID: 1593978316}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[1]
+      propertyPath: 'waypoints.Array.data[1]'
       value: 
       objectReference: {fileID: 839469035}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[2]
+      propertyPath: 'waypoints.Array.data[2]'
       value: 
       objectReference: {fileID: 1327903403}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[3]
+      propertyPath: 'waypoints.Array.data[3]'
       value: 
       objectReference: {fileID: 669116672}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[4]
+      propertyPath: 'waypoints.Array.data[4]'
       value: 
       objectReference: {fileID: 2105014284}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[5]
+      propertyPath: 'waypoints.Array.data[5]'
       value: 
       objectReference: {fileID: 1989070656}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[6]
+      propertyPath: 'waypoints.Array.data[6]'
       value: 
       objectReference: {fileID: 1101345113}
     - target: {fileID: 5252493099713534859, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
-      propertyPath: waypoints.Array.data[7]
+      propertyPath: 'waypoints.Array.data[7]'
       value: 
       objectReference: {fileID: 1578146698}
     - target: {fileID: 6379186812178520122, guid: 708dc05f22a12a74d867eb51f9a31c1a, type: 3}
@@ -33716,13 +33721,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5750497262983117583, guid: 038fa8c05eb2258419e0cc13ec2ab8bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1214523010648337047}
   m_SourcePrefab: {fileID: 100100000, guid: 038fa8c05eb2258419e0cc13ec2ab8bc, type: 3}
 --- !u!4 &1214523010648337043 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9159842986172469884, guid: 038fa8c05eb2258419e0cc13ec2ab8bc, type: 3}
   m_PrefabInstance: {fileID: 1214523010648337042}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1214523010648337047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680746004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e7b79e73de6094e90ca552b5c7224e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1001 &7563597519179818327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33834,14 +33854,6 @@ PrefabInstance:
     - target: {fileID: 6330128893089595894, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_SortingOrder
       value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 6748695592913404329, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6748695592913404329, guid: 486500248edda0514a22f9be3195f196, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 6748695592913404329, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_LocalPosition.x
