@@ -57,10 +57,10 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
 
-        /*if (_input.Menu)
+        if (_input.Menu)
         {
             SceneManager.LoadScene("MainScene");
-        }*/
+        }
        
         var hitInfo = Physics2D.Raycast(transform.position, _aim.Direction, shootDistance, whatIsEnemy);
 
