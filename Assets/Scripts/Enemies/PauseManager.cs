@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 
 public class PauseManager : MonoBehaviour
@@ -67,7 +68,14 @@ public class PauseManager : MonoBehaviour
 
     }
 
-
+    public void GoMainMenu()
+    {
+        PauseMenu.SetActive(false);
+        paused = false;
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainScene");
+        
+    }
 
     public void restart()
 
