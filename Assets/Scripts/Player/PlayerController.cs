@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -26,6 +27,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
     public LayerMask whatIsEnemy;
     public Vector2 groundBoxSize = new Vector2(0.55f, 0.1f);
+    public GameObject gunShooting;
+    public Transform theGun;
 
     public AudioClip gunShot;
     public AudioClip[] dyingSounds;
@@ -69,6 +72,8 @@ public class PlayerController : MonoBehaviour
             }
 
             _rigidbody2D.linearVelocity = -_aim.Direction * force;
+            GameObject newShooting = Instantiate(gunShooting, _aim.crosshair.position, theGun.rotation, _aim.crosshair.parent);
+            Destroy(newShooting, 1f);
         }
 
         if (gunFired && !playerIsGrounded)

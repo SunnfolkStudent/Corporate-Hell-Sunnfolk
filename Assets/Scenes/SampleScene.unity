@@ -23415,6 +23415,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 296549084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &437717827 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3857071825843948371, guid: 486500248edda0514a22f9be3195f196, type: 3}
+  m_PrefabInstance: {fileID: 7563597519179818327}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &449071914
 GameObject:
   m_ObjectHideFlags: 0
@@ -35469,9 +35474,17 @@ PrefabInstance:
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
+      propertyPath: theGun
+      value: 
+      objectReference: {fileID: 437717827}
+    - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: gunShot
       value: 
       objectReference: {fileID: 8300000, guid: 22b404a1b51680a4ebf97ac7a8825d70, type: 3}
+    - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
+      propertyPath: gunShooting
+      value: 
+      objectReference: {fileID: 1557263201474431800, guid: c71944a6a505a733792caf67d3d95329, type: 3}
     - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: groundBoxSize.x
       value: 0.6
