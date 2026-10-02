@@ -4,6 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class EndCutsceneManager : MonoBehaviour
 {
+    public AudioSource _audioSource;
+    public AudioClip creditMusic;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
     public void goToCutscene()
     {
         SceneManager.LoadScene("CutScene");
@@ -15,6 +22,11 @@ public class EndCutsceneManager : MonoBehaviour
         {
             goToCutscene();
         }
+    }
+
+    public void cutSceneMusic()
+    {
+        _audioSource.PlayOneShot(creditMusic);
     }
 
     public void goToMainMenu()

@@ -38,7 +38,6 @@ public class FollowThePath : MonoBehaviour {
     {
         if (shouldMove)
         {
-            _audioSource.PlayOneShot(chasingStart);
             _animator.Play("Chaser Turning On");
         }
 
