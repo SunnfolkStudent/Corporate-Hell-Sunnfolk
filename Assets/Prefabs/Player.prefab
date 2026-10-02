@@ -741,7 +741,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   groundBoxSize: {x: 0.6, y: 0.001}
-  gunShooting: {fileID: 1557263201474431800, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+  gunShooting: {fileID: 3172112680183485283, guid: c71944a6a505a733792caf67d3d95329, type: 3}
   theGun: {fileID: 3857071825843948371}
   gunShot: {fileID: 8300000, guid: 22b404a1b51680a4ebf97ac7a8825d70, type: 3}
   dyingSounds:
@@ -767,6 +767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputManager
   Gun: 0
+  Menu: 0
 --- !u!114 &5218814862088294395
 MonoBehaviour:
   m_ObjectHideFlags: 0
