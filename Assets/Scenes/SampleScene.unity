@@ -27785,6 +27785,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce84b67ce96649a40af2667e4b52464f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  _audioSource: {fileID: 0}
+  creditMusic: {fileID: 0}
 --- !u!60 &701233924
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -35171,6 +35173,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9159842986172469884, guid: 038fa8c05eb2258419e0cc13ec2ab8bc, type: 3}
   m_PrefabInstance: {fileID: 1214523010648337042}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5239599901619046848
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3172112680183485283, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+      propertyPath: m_Name
+      value: Shooting Animation Holder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030904421638612962, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030904421638612962, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030904421638612962, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030904421638612962, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030904421638612962, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030904421638612962, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030904421638612962, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030904421638612962, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030904421638612962, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030904421638612962, guid: c71944a6a505a733792caf67d3d95329, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c71944a6a505a733792caf67d3d95329, type: 3}
 --- !u!1001 &7563597519179818327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35179,6 +35238,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2408201123220267812, guid: 486500248edda0514a22f9be3195f196, type: 3}
+      propertyPath: gunShooting
+      value: 
+      objectReference: {fileID: 3172112680183485283, guid: c71944a6a505a733792caf67d3d95329, type: 3}
     - target: {fileID: 3462087521501905315, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_Camera
       value: 
@@ -35251,3 +35314,4 @@ SceneRoots:
   - {fileID: 223420990}
   - {fileID: 1560528994}
   - {fileID: 701233925}
+  - {fileID: 5239599901619046848}

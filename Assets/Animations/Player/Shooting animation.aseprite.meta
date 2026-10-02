@@ -103,7 +103,7 @@ ScriptedImporter:
     addShadowCasters: 0
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
-  platformSettingsDirtyTick: 639265241742125380
+  platformSettingsDirtyTick: 639265419152886750
   singleSpriteImportData:
   - name: 
     originalName: 
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 73
       width: 30
       height: 22
-    spriteID: f151dd86ac5933e36bcc32e1bf820475
+    spriteID: 8295b4b47878e91679c951a4a1001218
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,7 +160,7 @@ ScriptedImporter:
       y: 4
       width: 42
       height: 27
-    spriteID: 1eab5b7d818fa8573aecec571973f932
+    spriteID: f0b82b09124858502a75493ea5abc3a6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -181,7 +181,7 @@ ScriptedImporter:
       y: 4
       width: 54
       height: 27
-    spriteID: 1b3e78951aa9feb79acf3587d0f6aa2a
+    spriteID: 1eea2de669b8f57489fe5360e2b64598
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -202,7 +202,7 @@ ScriptedImporter:
       y: 107
       width: 21
       height: 15
-    spriteID: 28a8654cb3a3b63cb842e342645fd15d
+    spriteID: 3497a027faf42b9cea230506158277a4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -223,7 +223,7 @@ ScriptedImporter:
       y: 39
       width: 53
       height: 25
-    spriteID: df77f65a98b3f4f3798528ae4073f00d
+    spriteID: d30869b67d572003bb2f021de2d76e22
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -244,7 +244,7 @@ ScriptedImporter:
       y: 72
       width: 49
       height: 27
-    spriteID: 762610e0d5384d840be2860be6896791
+    spriteID: 7268eadf888f12edd9e704806bd7e591
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -265,7 +265,7 @@ ScriptedImporter:
       y: 39
       width: 39
       height: 26
-    spriteID: d73d16c17c57340f19ed9a102a381bca
+    spriteID: 40f58409d301c71499a33ca4a3d4a90a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -297,7 +297,7 @@ ScriptedImporter:
         y: 2
         width: 30
         height: 22
-      spriteId: f151dd86ac5933e36bcc32e1bf820475
+      spriteId: 8295b4b47878e91679c951a4a1001218
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -306,7 +306,7 @@ ScriptedImporter:
         y: 0
         width: 42
         height: 27
-      spriteId: 1eab5b7d818fa8573aecec571973f932
+      spriteId: f0b82b09124858502a75493ea5abc3a6
     - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -315,7 +315,7 @@ ScriptedImporter:
         y: 0
         width: 54
         height: 27
-      spriteId: 1b3e78951aa9feb79acf3587d0f6aa2a
+      spriteId: 1eea2de669b8f57489fe5360e2b64598
     - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -324,7 +324,7 @@ ScriptedImporter:
         y: 5
         width: 21
         height: 15
-      spriteId: 28a8654cb3a3b63cb842e342645fd15d
+      spriteId: 3497a027faf42b9cea230506158277a4
     - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -333,7 +333,7 @@ ScriptedImporter:
         y: 2
         width: 53
         height: 25
-      spriteId: df77f65a98b3f4f3798528ae4073f00d
+      spriteId: d30869b67d572003bb2f021de2d76e22
     - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
@@ -342,7 +342,7 @@ ScriptedImporter:
         y: 0
         width: 49
         height: 27
-      spriteId: 762610e0d5384d840be2860be6896791
+      spriteId: 7268eadf888f12edd9e704806bd7e591
     - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
@@ -351,7 +351,7 @@ ScriptedImporter:
         y: 0
         width: 39
         height: 26
-      spriteId: d73d16c17c57340f19ed9a102a381bca
+      spriteId: 40f58409d301c71499a33ca4a3d4a90a
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -371,6 +371,18 @@ ScriptedImporter:
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
     overridden: 0
     ignorePlatformSupport: 0
     maxTextureSize: 16384
