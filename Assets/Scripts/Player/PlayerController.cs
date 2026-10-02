@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
             gunFired = false;
         }
 
-        if (playerIsGrounded && !_wasGrounded && ammo < ammoSize && !_input.Gun)
+        if (playerIsGrounded && ammo < ammoSize && !_input.Gun)
         {
             ammo = ammoSize;
         }
