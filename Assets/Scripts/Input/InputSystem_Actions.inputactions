@@ -15,6 +15,16 @@
                     "interactions": "",
                     "initialStateCheck": false,
                     "priority": 0
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "554d6783-226f-4a78-b953-8299729f2514",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -31,12 +41,12 @@
                 },
                 {
                     "name": "",
-                    "id": "4924ef7e-592c-49d1-a6dc-06dd7d1c68b8",
-                    "path": "<Keyboard>/space",
+                    "id": "687190e4-4f34-426c-acbc-93650fe09cbe",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "GUN",
+                    "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
