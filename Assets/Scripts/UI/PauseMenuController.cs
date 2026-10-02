@@ -1,5 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.InputSystem;
+
+public class PauseMenuController : MonoBehaviour
+{
+
+    public void GameScene()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+    
+    public void QuitGame()
+    {
+        Application.Quit(); 
+    }
+
+}
