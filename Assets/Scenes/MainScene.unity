@@ -696,7 +696,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 312dc1d132fd0b340bb23208e0c3747e, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -1236,7 +1236,7 @@ MonoBehaviour:
   - {fileID: -6088442959120399827, guid: 4c1debe5faff28f46b5a581a2ceaf764, type: 3}
   - {fileID: -3179241276717825194, guid: 4c1debe5faff28f46b5a581a2ceaf764, type: 3}
   - {fileID: 3292740199134066961, guid: 4c1debe5faff28f46b5a581a2ceaf764, type: 3}
-  spritePerFrame: 13
+  spritePerFrame: 3
   loop: 1
   destroyOnEnd: 0
 --- !u!1660057539 &9223372036854775807
