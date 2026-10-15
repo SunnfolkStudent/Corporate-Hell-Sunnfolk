@@ -10,13 +10,13 @@ public class EnemyPatrol : MonoBehaviour
     public Transform fallCheck;
     
     private Rigidbody2D _rigidbody2D;
-    private Animator _animator;
+    private Animator _enemyAnimator;
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _animator = GetComponent<Animator>();
-        _animator.Play("Patrol 1 Walk Animations");
+        _enemyAnimator = GetComponent<Animator>();
+        _enemyAnimator.Play("Patrol 1 Walk Animations");
     }
 
     private void Update()
