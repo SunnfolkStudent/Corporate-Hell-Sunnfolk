@@ -1,13 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-3188501808241827078
+--- !u!1102 &-992715771590726815
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy Death
+  m_Name: EnemyDeath
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -117,8 +117,8 @@ AnimatorStateMachine:
     m_State: {fileID: 3771408531788689530}
     m_Position: {x: 270, y: 130, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -3188501808241827078}
-    m_Position: {x: 250, y: 60, z: 0}
+    m_State: {fileID: -992715771590726815}
+    m_Position: {x: 270, y: 70, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
