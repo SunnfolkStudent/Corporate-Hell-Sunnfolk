@@ -15,9 +15,10 @@ public class FloatEnemy : MonoBehaviour
         _animator = GetComponent<Animator>();
         _animator.Play("Floater Idle");
     }
-
+    
     public void deathSound()
     {
+        Debug.Log("Audio playing");
         _audioSource.PlayOneShot(dyingSound);
     }
 }

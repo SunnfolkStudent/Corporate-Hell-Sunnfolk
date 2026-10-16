@@ -264,6 +264,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 680060499075591829, guid: 038fa8c05eb2258419e0cc13ec2ab8bc, type: 3}
+      propertyPath: Priority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 680060499075591829, guid: 038fa8c05eb2258419e0cc13ec2ab8bc, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 680060499075591829, guid: 038fa8c05eb2258419e0cc13ec2ab8bc, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -1572271962596408001, guid: c70555d5ec4794c43a4ef934ec0637fe, type: 2}
     - target: {fileID: 5750497262983117583, guid: 038fa8c05eb2258419e0cc13ec2ab8bc, type: 3}
       propertyPath: m_Name
       value: FloatingEnemy
@@ -567,6 +579,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 509921964717462596, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
+      propertyPath: Priority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 509921964717462596, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 509921964717462596, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -1572271962596408001, guid: c70555d5ec4794c43a4ef934ec0637fe, type: 2}
     - target: {fileID: 2541788441022979760, guid: 1323a6fff63f39247a298f86bcd9bfee, type: 3}
       propertyPath: m_Name
       value: PatrolEnemy
@@ -624,6 +648,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 512536758203904421, guid: 486500248edda0514a22f9be3195f196, type: 3}
+      propertyPath: Priority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 512536758203904421, guid: 486500248edda0514a22f9be3195f196, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 512536758203904421, guid: 486500248edda0514a22f9be3195f196, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 4264897833290024094, guid: c70555d5ec4794c43a4ef934ec0637fe, type: 2}
     - target: {fileID: 6330128893089595894, guid: 486500248edda0514a22f9be3195f196, type: 3}
       propertyPath: m_SpriteSortPoint
       value: 0

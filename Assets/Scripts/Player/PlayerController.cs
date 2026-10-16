@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
         animator.Play("EnemyDeath");
         
         yield return new WaitForSeconds(1f);
-        Destroy(hitInfo.collider.gameObject);
+        //Destroy(hitInfo.collider.gameObject);
     }
 
     private void FixedUpdate()

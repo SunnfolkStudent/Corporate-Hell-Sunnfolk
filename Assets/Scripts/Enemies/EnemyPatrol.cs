@@ -52,6 +52,8 @@ public class EnemyPatrol : MonoBehaviour
 
     public void DeathSound()
     {
+        moveSpeed *= 0;
+        Debug.Log("Audio playing");
         _audioSource.PlayOneShot(dyingSound);
     }
 }
