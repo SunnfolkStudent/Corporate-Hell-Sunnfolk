@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
             _audioSource.PlayOneShot(gunShot);
             if (hitInfo.collider != null)
             {
-                Destroy(hitInfo.collider.gameObject);
+                StartCoroutine(DeathTime(hitInfo));
                 ammo = ammoSize;
             }
 
@@ -97,6 +97,15 @@ public class PlayerController : MonoBehaviour
         }
 
         _wasGrounded = playerIsGrounded;
+    }
+
+    private IEnumerator DeathTime(RaycastHit2D hitInfo)
+    {
+        hitInfo.transform.TryGetComponent(out Animator animator);
+        animator.Play("EnemyDeath");
+        
+        yield return new WaitForSeconds(1f);
+        Destroy(hitInfo.collider.gameObject);
     }
 
     private void FixedUpdate()

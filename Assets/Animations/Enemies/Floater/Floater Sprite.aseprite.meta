@@ -7,7 +7,7 @@ ScriptedImporter:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: Floater Death
-    second: {fileID: 7400000, guid: 43464beae45e35b4892ba6c0439484a1, type: 2}
+    second: {fileID: 7400000, guid: 3719c05af41a20d4daa9e07e59f205e7, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
@@ -113,7 +113,7 @@ ScriptedImporter:
     addShadowCasters: 0
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
-  platformSettingsDirtyTick: 639264621722556256
+  platformSettingsDirtyTick: 639276720676421963
   singleSpriteImportData:
   - name: 
     originalName: 
