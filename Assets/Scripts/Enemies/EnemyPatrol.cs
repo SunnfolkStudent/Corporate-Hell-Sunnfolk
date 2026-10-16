@@ -11,11 +11,15 @@ public class EnemyPatrol : MonoBehaviour
     
     private Rigidbody2D _rigidbody2D;
     private Animator _enemyAnimator;
+    private AudioSource _audioSource;
+    
+    public AudioClip dyingSound;
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _enemyAnimator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
         _enemyAnimator.Play("Patrol 1 Walk Animations");
     }
 
@@ -44,5 +48,10 @@ public class EnemyPatrol : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(wallCheck.position, 0.1f);
         Gizmos.DrawWireSphere(fallCheck.position, 0.1f);
+    }
+
+    public void DeathSound()
+    {
+        _audioSource.PlayOneShot(dyingSound);
     }
 }

@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7e7b79e73de6094e90ca552b5c7224e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  dyingSound: {fileID: 8300000, guid: 9974fc17f08e4344d973d88baab244c0, type: 3}
 --- !u!95 &6416709230698902102
 Animator:
   serializedVersion: 7
