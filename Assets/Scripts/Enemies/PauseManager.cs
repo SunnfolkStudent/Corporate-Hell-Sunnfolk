@@ -49,7 +49,6 @@ public class PauseManager : MonoBehaviour
 
 
     public void hideOrShow()
-
     {
 
         if (PauseMenu.activeInHierarchy)
