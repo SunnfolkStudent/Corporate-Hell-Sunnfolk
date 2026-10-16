@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Splines.ExtrusionShapes;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private Aim _aim;
     private Rigidbody2D _rigidbody2D;
     private bool _wasGrounded;
+    public LayerMask excludeLayers;
 
     public bool playerIsGrounded;
     public Transform groundCheck;
@@ -103,10 +105,11 @@ public class PlayerController : MonoBehaviour
     private IEnumerator DeathTime(RaycastHit2D hitInfo)
     {
         hitInfo.transform.TryGetComponent(out Animator animator);
+        hitInfo.transform.TryGetComponent(out CircleCollider2D circleCollider2D);
         animator.Play("EnemyDeath");
         
         yield return new WaitForSeconds(1f);
-        //Destroy(hitInfo.collider.gameObject);
+        Destroy(hitInfo.collider.gameObject);
     }
 
     private void FixedUpdate()
