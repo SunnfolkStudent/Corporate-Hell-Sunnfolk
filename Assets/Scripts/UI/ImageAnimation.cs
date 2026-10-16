@@ -5,13 +5,13 @@ using UnityEngine.UI;
 public class ImageAnimation : MonoBehaviour {
 
     public Sprite[] sprites;
-    public int spritePerFrame = 6;
+    public float spritePerFrame = 6;
     public bool loop = true;
     public bool destroyOnEnd = false;
 
     private int index = 0;
     private Image image;
-    private int frame = 0;
+    private float frame = 0;
 
     void Awake() {
         image = GetComponent<Image> ();
@@ -19,7 +19,7 @@ public class ImageAnimation : MonoBehaviour {
 
     void Update () {
         if (!loop && index == sprites.Length) return;
-        frame ++;
+        frame += 1 * Time.deltaTime;
         if (frame < spritePerFrame) return;
         image.sprite = sprites [index];
         frame = 0;
